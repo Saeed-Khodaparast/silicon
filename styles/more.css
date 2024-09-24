@@ -1,0 +1,92 @@
+.more {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more .title h1 {
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.more .items {
+  width: auto;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5vw;
+}
+
+.more .items .item {
+  width: 20%;
+  text-align: start;
+  border-radius: 1rem;
+  transition: transform 300ms;
+}
+
+.more .items .item:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: var(--shadow_color) 1px 1px 10px 1px, var(--shadow_color) -1px -1px 10px 1px;
+}
+
+.more .items .item img {
+  width: 3.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.more .items .item h4 {
+  margin: 1rem 1.5rem 0 0;
+}
+
+.more .items .item p {
+  margin: 1.5rem;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+@media (max-width: 1200px) and (min-width: 650px) {
+
+  .more .items {
+    gap: 2vw;
+  }
+
+  .more .items .item {
+    width: 40%;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .more {
+    margin-top: 4rem;
+  }
+
+  .more .title h1 {
+    font-size: 1.8rem;
+  }
+
+  .more .items .item {
+    width: 90%;
+  }
+
+  .more .items .item h4 {
+    margin: 1rem 1rem 0 0;
+  }
+
+  .more .items .item p {
+    margin: 1rem;
+  }
+
+}
+

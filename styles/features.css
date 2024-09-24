@@ -1,0 +1,80 @@
+.features {
+  width: 90%;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.features .item {
+  padding: 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  transition: transform 300ms;
+}
+
+.features .item:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: var(--shadow_color) 1px 1px 10px 1px, var(--shadow_color) -1px -1px 10px 1px;
+}
+
+.features .item span {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: IranSans-Bold, sans-serif;
+}
+
+@media (max-width: 900px) {
+  .features {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6vw;
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 1100px) {
+  .features .item img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 900px) {
+
+  .features .item {
+    width: 60%;
+  }
+
+  .features .item img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 576px) {
+
+  .features .item {
+    width: 25%;
+  }
+
+  .features .item img {
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  .features {
+    margin-top: 5rem;
+  }
+
+  .features .item {
+    width: 60%;
+  }
+
+  .features .item img {
+    width: 80%;
+  }
+}

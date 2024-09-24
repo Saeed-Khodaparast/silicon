@@ -1,0 +1,292 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  width: 100%;
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav .right {
+  width: 50%;
+  margin: 0 3vw 0 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav .right .logo {
+  display: flex;
+  font-family: "IranSans-Bold", sans-serif;
+}
+
+.nav .right .logo img {
+  width: 3rem;
+}
+
+.nav .right .logo span {
+  margin-right: 0.1rem;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.nav .right ul {
+  margin: 0 2vw 0 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 0.25rem;
+}
+
+.nav .right li {
+  display: inline;
+  margin: 0 1.7vw 0 0;
+}
+
+.nav .right li a {
+  transition: color 500ms;
+}
+
+.nav .right li a:hover {
+  color: var(--color_primary);
+}
+
+.nav .right li i {
+  margin-right: 0.2rem;
+  font-size: 0.6rem;
+}
+
+.nav .left {
+  width: 50%;
+  margin-left: 3vw;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.nav .left .switch {
+  width: 2.4rem;
+  height: 1.3rem;
+  margin: 0 0.5rem;
+  padding: 0.4rem 0;
+  border: none;
+  border-radius: 50rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: white;
+  background-color: var(--color_primary);
+  transition: background-color 300ms;
+}
+
+.nav .left .light {
+  font-weight: 600;
+}
+
+.nav .left .switch i {
+  margin-left: 0.2rem;
+}
+
+.nav .left .hamburger {
+  margin-right: 4vw;
+  padding: 0.5rem 0.5rem;
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--grey_variant_three);
+}
+
+.nav .left .button {
+  width: 11.5rem;
+  height: 2.5rem;
+  margin-right: 5vw;
+  padding: 0.4rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "IranSans", sans-serif;
+  color: white;
+  background-color: var(--color_primary);
+  transition: background-color 300ms;
+  cursor: pointer;
+}
+
+.nav .left .button:hover {
+  background-color: var(--color_primary_dark);
+}
+
+.nav .left .button i {
+  margin-left: 1rem;
+}
+
+.hero {
+  width: 100%;
+  height: 50vw;
+  display: flex;
+  color: white;
+  overflow: hidden;
+  background: url("../images/background.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.hero .right {
+  width: 50%;
+  margin-right: 6vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .right h1 {
+  width: 100%;
+  margin: 7vw 0 1.5rem 0;
+  font-size: 6vw;
+}
+
+.hero .right span {
+  width: 100%;
+  font-size: 2vw;
+}
+
+.hero .right img {
+  width: 15vw;
+  margin-top: 5vw;
+}
+
+.hero .right .landings {
+  margin-top: 8vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  cursor: pointer;
+  color: white;
+}
+
+.hero .right .landings span {
+  font-size: 1.5vw;
+}
+
+.hero .right .landings i {
+  margin-left: 1.5vw;
+  font-size: 1vw;
+}
+
+.hero .left {
+  /*margin-left: 10rem;*/
+  margin-right: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-attachment: fixed;
+  background-size: cover;
+  scale: 1.8;
+}
+
+#image01 {
+  width: auto;
+  height: 40vw;
+  margin-top: 12.5vw;
+}
+
+#image02 {
+  width: auto;
+  height: 40vw;
+  margin-top: 3rem;
+  margin-left: 12vw;
+  visibility: visible;
+}
+
+@media (max-width: 992px) {
+  .nav .right ul {
+    display: none;
+  }
+
+  .nav .left .hamburger {
+    display: inline;
+  }
+
+  .nav .left .button {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav .right {
+    margin-right: 0;
+  }
+
+  .nav .left .dark {
+    display: none;
+  }
+
+  .nav .left .light {
+    display: none;
+  }
+
+  .nav .left .hamburger {
+    margin-right: 3vw;
+  }
+
+  #image01 {
+    width: auto;
+    height: 60vw;
+    margin-top: 8.5vw;
+    margin-left: 12vw;
+  }
+
+  #image02 {
+    display: none;
+  }
+
+  .hero {
+    height: 80vw;
+  }
+
+  .hero .right {
+    width: 50%;
+    margin: auto;
+    align-items: center;
+  }
+
+  .hero .right h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 10vw;
+  }
+
+  .hero .right span {
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  .hero .right img {
+    width: 32vw;
+    margin-top: 7vw;
+  }
+
+  .hero .right .landings {
+    margin-top: 10vw;
+    margin-bottom: 6vw;
+  }
+
+  .hero .right .landings span {
+    font-size: 3vw;
+  }
+
+  .hero .right .landings i {
+    font-size: 3vw;
+  }
+
+  .hero .left {
+    display: none;
+  }
+}

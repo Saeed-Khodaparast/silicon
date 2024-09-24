@@ -1,0 +1,59 @@
+:root {
+  --surface-color: #FFFFFF;
+  --color_primary: #6366F1;
+  --color_primary_dark: #4E50F0;
+  --grey_color: #f4f6f8;
+  --shadow_color: #f4f6f8;
+  --text_color_primary: #404040;
+  --text_color_secondary: #454545;
+  --text_color_tertiary: #777777;
+}
+
+@font-face {
+  font-family: "IranSans";
+  src: url("../fonts/iransans_fd.ttf");
+}
+
+@font-face {
+  font-family: "IranSans-Bold";
+  src: url("../fonts/iransans_bold_fd.ttf");
+}
+
+@font-face {
+  font-family: "IranSans_ul", sans-serif;
+  src: url("../fonts/iransans_ultralight.ttf");
+}
+
+@font-face {
+  font-family: "Titr_Bold";
+  src: url("../fonts/b_titr_bold.ttf");
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  direction: rtl;
+  font-family: IranSans, sans-serif;
+  background-color: var(--surface-color);
+  color: var(--text_color_secondary);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a.custom {
+  text-decoration-line: none;
+}
+
+a.custom:link, a.custom:visited {
+  color: #000;
+}
